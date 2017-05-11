@@ -14,10 +14,10 @@ Meteor.startup(() => {
   render(
     <Router history={ browserHistory }>
       <Route path="/" component={ App }>
-      <IndexRoute component={Login} />
-      <Route path="/signup" component={Signup} />
-      <Route path="/sections" component={Sections} />
-      <Route path="*" component={NotFound} />
+        <IndexRoute component={ Login } />
+        <Route path="/signup" component={ Signup} />
+        <Route path="/sections" component={ Sections } />
+        <Route path="*" component={ NotFound } />
       </Route>
     </Router>,
     document.getElementById('react-root'),
