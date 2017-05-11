@@ -1,14 +1,43 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import { Meteor } from 'meteor/meteor';
 
 class Login extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      error: '',
+    };
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+
+    const email = this.email.value.trim();
+    const password = this.password.value.trim();
+
+    Meteor.loginWithPassword({ email }, password, (err) => {
+      if (err) {
+        this.setState({
+          error: err.message,
+        });
+      } else {
+        this.setState({
+          error: '',
+        });
+      }
+    });
+  }
+
   render() {
     return (
       <div className="boxed-view">
         <div className="boxed-view__box">
           <h1>Short Link</h1>
 
-          <form className="boxed-view__form">
+          {this.state.error ? <p>{this.state.error}</p> : undefined}
+          <form onSubmit={this.handleSubmit.bind(this)} className="boxed-view__form">
             <input
               type="email"
               ref={(email) => { this.email = email; }}

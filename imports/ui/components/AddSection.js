@@ -24,6 +24,10 @@ class AddSection extends Component {
     this.setState({ modalIsOpen: false });
   }
 
+  handleLogout() {
+
+  }
+
   handleSubmit(e) {
     e.preventDefault();
 
