@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 // components
 import AddSection from './AddSection';
+import SectionList from './SectionList';
 
 class Sections extends Component {
   render() {
     return (
       <div>
-        <h1>Sections</h1>
-        <p>SectionList Component</p>
+        <SectionList />
         <AddSection />
       </div>
     );
