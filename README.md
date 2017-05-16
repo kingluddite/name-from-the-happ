@@ -1,17 +1,17 @@
 # GWDA-407 Final Project
 ### Created using meteor-create app
 ## Members
-* Jared Nutt
-* Jenny Hwang
+* Jared
+* Jenny
 * Tommy
-* Vonetta Lauren Tapley
+* Vonetta
+* Lauren
 
 # Instructions for init
 ## Part 1. Fork Repo
 In depth Instructions https://help.github.com/articles/fork-a-repo/
 
-1. Fork Repo on github
-![fork](https://help.github.com/assets/images/help/repository/fork_button.jpg)
+1. Fork Repo on github: ![fork](https://help.github.com/assets/images/help/repository/fork_button.jpg "Fork")
 
 
 2. Clone forked repo to local machine
