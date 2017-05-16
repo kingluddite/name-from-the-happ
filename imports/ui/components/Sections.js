@@ -8,6 +8,7 @@ class Sections extends Component {
     return (
       <div>
         <h1>Sections</h1>
+        <p>SectionList Component</p>
         <AddSection />
       </div>
     );
