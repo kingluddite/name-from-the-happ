@@ -1,7 +1,7 @@
 # GWDA-407 Final Project
 ### Created using meteor-create app
 ## Members
-* Jared
+* Jared Nutt
 * Jenny
 * Tommy
 * Vonetta
@@ -9,7 +9,7 @@
 
 # Instructions for init
 ## Part 1. Fork Repo
-In depth Instructions https://help.github.com/articles/fork-a-repo/
+In depth Instructions [here](https://help.github.com/articles/fork-a-repo/ "Fork a repo").
 
 1. Fork Repo on github: ![fork](https://help.github.com/assets/images/help/repository/fork_button.jpg "Fork")
 
@@ -41,3 +41,12 @@ $ git remote add upstream https://github.com/DarthOstrich/name-from-the-happ
 ```
 $ meteor run
 ```
+
+## Part 3. Editing files and pushing commits
+1. Make changes to the files
+2. add and commit changes
+3. Create pull request with upstream master (DarthOstrich). In depth instructions [here](https://help.github.com/articles/about-pull-requests/ "Pull requests").
+
+![pull](https://help.github.com/assets/images/help/pull_requests/pull-request-review-page.png)
+
+4. DarthOstrich will aprove all pull requests.
