@@ -34,7 +34,7 @@ class Login extends Component {
     return (
       <div className="boxed-view">
         <div className="boxed-view__box">
-          <h1>Name from the Happ</h1>
+          <h1>Short Link</h1>
 
           {this.state.error ? <p>{this.state.error}</p> : undefined}
           <form onSubmit={this.handleSubmit.bind(this)} className="boxed-view__form">
@@ -50,7 +50,7 @@ class Login extends Component {
             <button className="button" type="submit">Login</button>
           </form>
 
-          <Link to="/signup">Need an account?</Link>
+          <Link to="/signup">Have an account?</Link>
         </div>
         {/* END .boxed-view__box */}
       </div>
