@@ -1,7 +1,7 @@
 import React from 'react';
-import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import {Meteor} from 'meteor/meteor';
+import {render} from 'react-dom';
+import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 
 // components
 import App from './../../ui/components/App';
@@ -9,6 +9,7 @@ import Login from './../../ui/components/Login';
 import Signup from './../../ui/components/Signup';
 import Sections from './../../ui/components/Sections';
 import PresentationView from './../../ui/components/PresentationView';
+import PresentationEdit from './../../ui/components/PresentationEdit';
 import NotFound from './../../ui/components/NotFound';
 
 const publicPages = ['/', '/signup'];
@@ -41,21 +42,16 @@ const onAuthChange = (isAuthenticated) => {
 
 Meteor.startup(() => {
   render(
-    <Router history={ browserHistory }>
-      <Route path="/" component={ App }>
-        <IndexRoute component={ Login } onEnter={ onEnterPublicPage }/>
-        <Route path="/signup" component={ Signup} onEnter={ onEnterPublicPage } />
-        <Route path="/sections" component={ Sections } onEnter={onEnterPrivatePage} />
-        <Route
-          path="/presentationview"
-          component={ PresentationView }
-          onEnter={onEnterPrivatePage}
-        />
-        <Route path="*" component={ NotFound } />
-      </Route>
-    </Router>,
-    document.getElementById('react-root'),
-  );
+    <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Login} onEnter={onEnterPublicPage}/>
+      <Route path="/signup" component={Signup} onEnter={onEnterPublicPage}/>
+      <Route path="/sections" component={Sections} onEnter={onEnterPrivatePage}/>
+      <Route path="/presentationview" component={PresentationView} onEnter={onEnterPrivatePage}/>
+      <Route path="/presentationedit" component={PresentationEdit} onEnter={onEnterPrivatePage}/>
+      <Route path="*" component={NotFound}/>
+    </Route>
+  </Router>, document.getElementById('react-root'),);
 });
 
 export default onAuthChange;
