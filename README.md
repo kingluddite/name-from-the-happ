@@ -4,11 +4,11 @@ Created using meteor-create app
 
 ## Members
 * Jared Nutt
-* Jenny
-* Tommy
+* Jenny Hwang
+* Lauren Tapley
+* Tommy Sherman
 * Vonetta Stevenson
-* Lauren
-* Ashbel
+* Ashbel Hernandez
 
 ## Basic Instructions
 1. All pull requests are done through Jared (DarthOstrich)
