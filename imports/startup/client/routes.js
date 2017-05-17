@@ -8,6 +8,7 @@ import App from './../../ui/components/App';
 import Login from './../../ui/components/Login';
 import Signup from './../../ui/components/Signup';
 import Sections from './../../ui/components/Sections';
+import PresentationList from './../../ui/components/PresentationList';
 import NotFound from './../../ui/components/NotFound';
 
 const publicPages = ['/', '/signup'];
@@ -45,6 +46,11 @@ Meteor.startup(() => {
         <IndexRoute component={ Login } onEnter={ onEnterPublicPage }/>
         <Route path="/signup" component={ Signup} onEnter={ onEnterPublicPage } />
         <Route path="/sections" component={ Sections } onEnter={onEnterPrivatePage} />
+        <Route
+          path="/presentationadd"
+          component={ PresentationList }
+          onEnter={onEnterPrivatePage}
+        />
         <Route path="*" component={ NotFound } />
       </Route>
     </Router>,
