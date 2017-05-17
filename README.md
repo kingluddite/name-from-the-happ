@@ -7,7 +7,7 @@ Created using meteor-create app
 * Jenny
 * Tommy
 * Vonetta
-* Lauren
+* Lauren Tapley
 
 ## Basic Instructions
 1. All pull requests are done through Jared (DarthOstrich)
