@@ -27,7 +27,8 @@ Create an app that allows a teacher to randomize order of presentations.
 * Mutiple Classes with Multiple presentations
 
 ### Structure
-All client components will be created in `./imports/ui/components`
+* All client components will be created in `./imports/ui/components`
+* Login system handled by meteor
 
 ## Instructions for init
 ### Part 1. Fork Repo
@@ -38,14 +39,14 @@ In depth Instructions [here](https://help.github.com/articles/fork-a-repo/ "Fork
 
 2. Clone forked repo to local machine
 ```
-$ git clone https://github.com/YOUR-USERNAME/name-from-the-happ
+$ git clone git@github.com:YOUR-USERNAME/name-from-the-happ
 ```
 
 3. Configure Git to sync your fork with the original name-from-the-happ repository
 
   a. Add DarthOstrich fork as upstream
 ```
-$ git remote add upstream https://github.com/DarthOstrich/name-from-the-happ
+$ git remote add upstream git@github.com:DarthOstrich/name-from-the-happ.git
 ```
 
 ### Part 2. Run App
