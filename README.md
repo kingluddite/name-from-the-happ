@@ -6,7 +6,7 @@ Created using meteor-create app
 * Jared Nutt
 * Jenny
 * Tommy
-* Vonetta
+* Vonetta Stevenson
 * Lauren
 
 ## Basic Instructions
