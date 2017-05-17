@@ -9,6 +9,7 @@ import Login from './../../ui/components/Login';
 import Signup from './../../ui/components/Signup';
 import Sections from './../../ui/components/Sections';
 import PresentationList from './../../ui/components/PresentationList';
+import PresentationView from './../../ui/components/PresentationView';
 import NotFound from './../../ui/components/NotFound';
 
 const publicPages = ['/', '/signup'];
@@ -25,7 +26,7 @@ const onEnterPrivatePage = () => {
   }
 };
 
-export const onAuthChange = (isAuthenticated) => {
+const onAuthChange = (isAuthenticated) => {
   const pathname = browserHistory.getCurrentLocation().pathname;
   const isPublicPage = publicPages.includes(pathname);
   const isPrivatePage = privatePages.includes(pathname);
@@ -49,6 +50,10 @@ Meteor.startup(() => {
         <Route
           path="/presentationadd"
           component={ PresentationList }
+        />
+        <Route
+          path="/presentationview"
+          component={ PresentationView }
           onEnter={onEnterPrivatePage}
         />
         <Route path="*" component={ NotFound } />
@@ -57,3 +62,5 @@ Meteor.startup(() => {
     document.getElementById('react-root'),
   );
 });
+
+export default onAuthChange;

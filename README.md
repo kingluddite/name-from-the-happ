@@ -8,6 +8,7 @@ Created using meteor-create app
 * Lauren Tapley
 * Tommy Sherman
 * Vonetta Stevenson
+* Ashbel Hernandez
 
 ## Basic Instructions
 1. All pull requests are done through Jared (DarthOstrich)
