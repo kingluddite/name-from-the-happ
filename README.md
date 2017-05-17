@@ -5,9 +5,9 @@ Created using meteor-create app
 ## Members
 * Jared Nutt
 * Jenny Hwang
-* Tommy
-* Vonetta
-* Lauren
+* Lauren Tapley
+* Tommy Sherman
+* Vonetta Stevenson
 
 ## Basic Instructions
 1. All pull requests are done through Jared (DarthOstrich)
