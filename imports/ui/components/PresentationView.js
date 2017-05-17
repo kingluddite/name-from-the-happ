@@ -1,38 +1,41 @@
-import React, from 'react';
+import React from 'react';
 
 // components
-
 
 const PresentationView = () => (
   <div>
     <h1>GWDA-407</h1>
-      <div>
-        <h2>Presenting</h2>
-          <div id="title">
-          <h3>Presentation Title</h3>
-          <ul>
-            <li>Name1</li>
-            <li>Name2</li>
-            <li>Name3</li>
-          </ul>
-          <div id="buttons">
-            <button>Edit</button>
-            <button>Skip</button>
-            <button>Complete</button>
+      <div className="container">
+          <div className="currentPresenter">
+            <h2>Presenting</h2>
+            <h3>Presentation Title</h3>
+            <ul>
+              <li>Name1</li>
+              <li>Name2</li>
+              <li>Name3</li>
+            </ul>
+            <div className="currPresNav">
+              <button>Edit</button>
+              <button>Skip</button>
+              <button>Complete</button>
             </div>
-        <h2>Up Next:</h2>
+            {/* END .currPresNav */}
+          </div>
+          {/* END .currentPresenter */}
+        <div className="nextPresenter">
+          <h2>Up Next:</h2>
           <h2>Presentation Title</h2>
           <ul>
             <li>Name1</li>
             <li>Name2</li>
             <li>Name3</li>
           </ul>
-          <div id="buttons">
-            <button>Edit</button>
-          </div>
-      </div>
+        </div>
+        {/* END .nextPresenter */}
 
-  </div>
+      </div>
+      {/* END .container */}
+    </div>
 );
 
-export default PresentationView
+export default PresentationView;
