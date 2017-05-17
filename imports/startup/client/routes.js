@@ -48,7 +48,7 @@ Meteor.startup(() => {
         <Route path="/signup" component={ Signup} onEnter={ onEnterPublicPage } />
         <Route path="/sections" component={ Sections } onEnter={onEnterPrivatePage} />
         <Route
-          path="/presentationadd"
+          path="/presentationlist"
           component={ PresentationList }
         />
         <Route
