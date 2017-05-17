@@ -4,7 +4,7 @@ Created using meteor-create app
 
 ## Members
 * Jared Nutt
-* Jenny
+* Jenny Hwang
 * Tommy
 * Vonetta
 * Lauren
