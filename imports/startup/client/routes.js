@@ -11,6 +11,7 @@ import Sections from './../../ui/components/Sections';
 import PresentationList from './../../ui/components/PresentationList';
 import PresentationView from './../../ui/components/PresentationView';
 import AddPresentation from './../../ui/components/AddPresentation';
+import PresentationEdit from './../../ui/components/PresentationEdit';
 import NotFound from './../../ui/components/NotFound';
 
 const publicPages = ['/', '/signup'];
@@ -43,6 +44,7 @@ const onAuthChange = (isAuthenticated) => {
 
 Meteor.startup(() => {
   render(
+// <<<<<<< HEAD
     <Router history={ browserHistory }>
       <Route path="/" component={ App }>
         <IndexRoute component={ Login } onEnter={ onEnterPublicPage }/>
@@ -60,6 +62,11 @@ Meteor.startup(() => {
         <Route
           path="/presentationadd"
           component={ AddPresentation }
+          onEnter={onEnterPrivatePage}
+        />
+        <Route
+          path="/presentationedit"
+          component={PresentationEdit}
           onEnter={onEnterPrivatePage}
         />
         <Route path="*" component={ NotFound } />
