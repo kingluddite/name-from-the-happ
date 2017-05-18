@@ -9,6 +9,7 @@ import Login from './../../ui/components/Login';
 import Signup from './../../ui/components/Signup';
 import Sections from './../../ui/components/Sections';
 import PresentationView from './../../ui/components/PresentationView';
+import AddPresentation from './../../ui/components/AddPresentation';
 import NotFound from './../../ui/components/NotFound';
 
 const publicPages = ['/', '/signup'];
@@ -49,6 +50,11 @@ Meteor.startup(() => {
         <Route
           path="/presentationview"
           component={ PresentationView }
+          onEnter={onEnterPrivatePage}
+        />
+        <Route
+          path="/presentationadd"
+          component={ AddPresentation }
           onEnter={onEnterPrivatePage}
         />
         <Route path="*" component={ NotFound } />
