@@ -44,7 +44,6 @@ const onAuthChange = (isAuthenticated) => {
 
 Meteor.startup(() => {
   render(
-// <<<<<<< HEAD
     <Router history={ browserHistory }>
       <Route path="/" component={ App }>
         <IndexRoute component={ Login } onEnter={ onEnterPublicPage }/>
