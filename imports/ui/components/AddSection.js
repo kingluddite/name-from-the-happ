@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import { Meteor } from 'meteor/meteor';
 
 // collections
 import { SectionsCollection } from './../../api/sections';
@@ -32,13 +33,17 @@ class AddSection extends Component {
     e.preventDefault();
 
     const name = this.name.value;
+    const ownerId = Meteor.userId();
 
     if (name) {
       SectionsCollection.insert({
         name,
+        ownerId,
+        presentations: {},
       });
       this.name.value = '';
     }
+    this.setState({ modalIsOpen: false });
   }
 
   render() {
@@ -54,6 +59,7 @@ class AddSection extends Component {
           overlayClassName="boxed-view boxed-view--modal"
         >
         <form className="boxed-view__form" onSubmit={this.handleSubmit.bind(this)}>
+          {/* <input type="text" ref={(name) => { this.name = name; }} /> */}
           <input type="text" ref={(name) => { this.name = name; }} />
           <button className="button">Add Section</button>
         </form>

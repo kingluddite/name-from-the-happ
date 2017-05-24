@@ -8,7 +8,10 @@ import App from './../../ui/components/App';
 import Login from './../../ui/components/Login';
 import Signup from './../../ui/components/Signup';
 import Sections from './../../ui/components/Sections';
+import PresentationList from './../../ui/components/PresentationList';
 import PresentationView from './../../ui/components/PresentationView';
+import AddPresentation from './../../ui/components/AddPresentation';
+import PresentationEdit from './../../ui/components/PresentationEdit';
 import NotFound from './../../ui/components/NotFound';
 
 const publicPages = ['/', '/signup'];
@@ -47,8 +50,22 @@ Meteor.startup(() => {
         <Route path="/signup" component={ Signup} onEnter={ onEnterPublicPage } />
         <Route path="/sections" component={ Sections } onEnter={onEnterPrivatePage} />
         <Route
+          path="/presentationlist"
+          component={ PresentationList }
+        />
+        <Route
           path="/presentationview"
           component={ PresentationView }
+          onEnter={onEnterPrivatePage}
+        />
+        <Route
+          path="/presentationadd"
+          component={ AddPresentation }
+          onEnter={onEnterPrivatePage}
+        />
+        <Route
+          path="/presentationedit"
+          component={PresentationEdit}
           onEnter={onEnterPrivatePage}
         />
         <Route path="*" component={ NotFound } />
