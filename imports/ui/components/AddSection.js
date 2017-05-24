@@ -32,12 +32,12 @@ class AddSection extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log('handleSubmit');
+    // console.log('handleSubmit');
 
     const title = this.title.value;
 
     Meteor.call('sections.insert', title, (err) => {
-      console.log('sections insert meteor call');
+      // console.log('sections insert meteor call');
       if (err) {
         this.setState({ error: err.reason });
       }
