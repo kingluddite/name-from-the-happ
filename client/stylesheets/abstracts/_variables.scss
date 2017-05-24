@@ -1,7 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Colors
 $concrete: #f2f2f2;
 $white: #ffffff;
 $black: #000000;
 $cerulean: #00aecc;
+$cardinal: #d01c26;
+
+///Main brand color
+$brand-primary: $cerulean;
 
 // Spacing
 $space: 1.4rem;
