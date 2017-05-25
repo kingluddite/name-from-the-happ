@@ -8,7 +8,7 @@ import SectionListItem from './SectionListItem';
 
 
 // collections
-import SectionsCollection from './../../api/sections';
+import SectionsCollection from './../../../api/sections';
 
 
 class SectionList extends Component {
