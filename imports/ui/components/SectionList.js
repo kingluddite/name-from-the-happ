@@ -4,7 +4,7 @@ import { Tracker } from 'meteor/tracker';
 // components
 // import AddSection from './AddSection';
 // import SectionList from './SectionList';
-import SectionsListItem from './SectionsListItem';
+import SectionListItem from './SectionListItem';
 
 
 // collections
@@ -41,7 +41,7 @@ class SectionList extends Component {
       );
     }
     return this.state.sections.map((section) => {
-      return <SectionsListItem key={section._id} section={ section } />;
+      return <SectionListItem key={section._id} section={ section } />;
     });
   }
 
